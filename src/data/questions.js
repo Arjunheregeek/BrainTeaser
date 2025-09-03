@@ -106,6 +106,6 @@ export const questionsDatabase = {
     },
     // ... 4 more Geography questions
   ]
-}
+  };
 
-// Total: 30 questions across 6 categories (5 questions each)
+  export default questionsDatabase;
