@@ -2,39 +2,39 @@ import React, { useState } from 'react'
 import { Calculator, Globe, Brain, Beaker, Clock, MapPin, Code } from 'lucide-react'
 
 const topics = [
-  { 
-    name: 'Mental Math', 
-    icon: Calculator, 
+  {
+    name: 'Mental Math',
+    icon: Calculator,
     emoji: '🧮',
     description: 'Test your quick calculation skills with fun math problems'
   },
-  { 
-    name: 'Current Affairs', 
-    icon: Globe, 
+  {
+    name: 'Current Affairs',
+    icon: Globe,
     emoji: '🌍',
     description: 'Stay updated with recent news and world events'
   },
-  { 
-    name: 'General Knowledge', 
-    icon: Brain, 
+  {
+    name: 'General Knowledge',
+    icon: Brain,
     emoji: '🧠',
     description: 'Challenge yourself with mixed trivia and interesting facts'
   },
-  { 
-    name: 'Science', 
-    icon: Beaker, 
+  {
+    name: 'Science',
+    icon: Beaker,
     emoji: '⚗️',
     description: 'Explore physics, chemistry, and biology concepts'
   },
-  { 
-    name: 'History', 
-    icon: Clock, 
+  {
+    name: 'History',
+    icon: Clock,
     emoji: '⏰',
     description: 'Journey through historical events and famous figures'
   },
-  { 
-    name: 'Geography', 
-    icon: MapPin, 
+  {
+    name: 'Geography',
+    icon: MapPin,
     emoji: '📍',
     description: 'Discover countries, capitals, and geographical wonders'
   }
@@ -49,19 +49,19 @@ function App() {
       <div className="app-container">
         <div className="quiz-container">
           <div className="quiz-content">
-            <button 
+            <button
               onClick={() => setSelectedTopic(null)}
               className="back-button"
             >
               ← Back to Topics
             </button>
-            
+
             <div className="quiz-card">
               <div className="quiz-header">
                 <span className="quiz-emoji">{selectedTopic.emoji}</span>
                 <h2 className="quiz-title">{selectedTopic.name} Quiz</h2>
               </div>
-              
+
               <div className="question-container">
                 <h3 className="question-title">Sample Question:</h3>
                 <p className="question-text">What is 15 × 7?</p>
@@ -72,7 +72,7 @@ function App() {
                   <button className="option-button">D) 85</button>
                 </div>
               </div>
-              
+
               <div className="quiz-footer">
                 Full quiz functionality with 30 questions coming soon!
               </div>
@@ -95,7 +95,7 @@ function App() {
               Choose from 6 exciting categories and test your knowledge with engaging questions
             </p>
           </div>
-          <button 
+          <button
             onClick={() => setShowCode(!showCode)}
             className="code-button"
           >
